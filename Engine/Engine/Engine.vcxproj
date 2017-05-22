@@ -115,16 +115,31 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="GameModel.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameTile.cpp" />
+    <ClCompile Include="GameView.cpp" />
     <ClCompile Include="gSettings.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainView.cpp" />
     <ClCompile Include="playView.cpp" />
+    <ClCompile Include="TextureContainer.cpp" />
+    <ClCompile Include="Tile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.h" />
+    <ClInclude Include="GameModel.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameTile.h" />
+    <ClInclude Include="GameView.h" />
     <ClInclude Include="gSettings.h" />
     <ClInclude Include="mainView.h" />
     <ClInclude Include="playView.h" />
+    <ClInclude Include="TextureContainer.h" />
+    <ClInclude Include="Tile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\grass1.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

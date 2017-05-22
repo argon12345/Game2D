@@ -17,6 +17,16 @@
 #define GSETTINGS_H
 #include "gSettings.h"
 #endif // !GSETTINGS_H
+#ifndef GAMEMODEL_H
+#define GAMEMODEL_H
+#include "GameModel.h"
+#endif // !GAMEMODEL_H
+#ifndef GAMEVIEW_H
+#define GAMEVIEW_H
+#include "GameView.h"
+#endif // !GAMEVIEW_H
+
+
 
 
 namespace view {
@@ -32,6 +42,7 @@ namespace view {
 		sf::RenderWindow * window;
 		sf::Font font;
 		std::vector<ctrl::Button> button;
+		GameView gameView;
 	};
 
 }

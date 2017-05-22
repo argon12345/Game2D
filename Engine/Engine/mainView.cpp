@@ -18,7 +18,7 @@ namespace view {
 
 
 	mainView::mainView()
-		: window(new sf::RenderWindow(sf::VideoMode(windowSettings::width, windowSettings::height, windowSettings::bpp), "Game2D", sf::Style::Fullscreen))
+		: window(new sf::RenderWindow(sf::VideoMode(windowSettings::width, windowSettings::height, windowSettings::bpp), "Game2D", sf::Style::Default))
 	{
 		window->setFramerateLimit(30);
 		if (!font.loadFromFile("segoesc.ttf"))

@@ -10,6 +10,7 @@ namespace view {
 	PlayView::PlayView(sf::RenderWindow * window)
 		:window(window)
 	{
+		
 		window->setFramerateLimit(30);
 		if (!font.loadFromFile("segoesc.ttf"))
 		{
@@ -18,7 +19,7 @@ namespace view {
 			window->close();
 		}
 
-		int width = windowSettings::width / 10 * 7.5;
+		int width = int(windowSettings::width / 10 * 7.5);
 		int height = windowSettings::height / 10;
 		button.push_back(ctrl::Button(width, height * 6, 200, 55, sf::String("New"), &font));
 		button.push_back(ctrl::Button(width, height * 7, 200, 55, sf::String("Load"), &font));
@@ -50,7 +51,8 @@ namespace view {
 						if (vec.checkPosition(mousePosition)) {
 							switch (i) {
 							case 0:
-								
+								this->gameView = view::GameView(this->window);
+								gameView.run();
 								break;
 							case 1:
 								
