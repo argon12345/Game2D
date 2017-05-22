@@ -1,16 +1,14 @@
 #include "gSettings.h"
 
-
-
-gSettings::gSettings()
+windowSettings::windowSettings()
 {
 }
 
 
-gSettings::~gSettings()
+windowSettings::~windowSettings()
 {
 }
 
-int gSettings::height = 1000;
-int gSettings::width = 1000;
-int gSettings::bpp = 32;
+int windowSettings::height = 1060;
+int windowSettings::width = 1920;
+int windowSettings::bpp = 32;

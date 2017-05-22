@@ -1,9 +1,10 @@
-#pragma once
-class gSettings
+
+
+class windowSettings
 {
 public:
-	gSettings();
-	~gSettings();
+	windowSettings();
+	~windowSettings();
 
 	static int width;
 	static int height;

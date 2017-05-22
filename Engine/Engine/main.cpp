@@ -3,6 +3,6 @@
 
 
 void main() {
-	mainView view;
-	view.run();
+	view::mainView game;
+	game.run();
 }

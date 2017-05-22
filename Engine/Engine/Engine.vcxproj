@@ -114,13 +114,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="gSettings.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainView.cpp" />
+    <ClCompile Include="playView.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Button.h" />
     <ClInclude Include="gSettings.h" />
     <ClInclude Include="mainView.h" />
+    <ClInclude Include="playView.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
